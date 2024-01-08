@@ -7,8 +7,8 @@ body{
   font-family: '나눔스퀘어';
 }
 p {
+  color: red;
   text-align: center;
-  color:red;
   margin-top: 10px;
   font-size:20px;
   font-weight: bold;
@@ -48,31 +48,7 @@ button{
     text-align: center;
     margin-bottom: 10px;
 }
-ul.list {
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center; 
-    border-bottom: 1px solid #ccc;
-    background-color: black;
-}
-  ul.list::after {
-    content: '';
-    text-align: center; 
-    display: block;
-    clear: both;
-}
-  .tab-button {
-    padding: 10px 20px 10px 20px;
-    float: left;
-    margin-right: -1px;
-    margin-bottom: -1px;
-    color: white;
-    cursor: pointer;
-    line-height: 60px;
-  }
-.container{
+.sale-container{
   float: left;
   display: block;
   padding: 10px;
@@ -174,4 +150,32 @@ h5{
   font-size: 20px;
   border: 2px solid red;
   border-radius: 5px;
+}
+.flex-container{
+  /* display: flex : inline + table요소를 합친 형태 
+    따라서 width를 100%로 해도 안의 요소가 전부 차지하지 않음
+
+  */
+  /* 부모요소에 display:flex를 주면 자동으로 가로배치가 완료됨 */
+  display: flex;
+  /* 
+  가운데 정렬 : justify-content: center;
+  우측정렬 :  justify-content: flex-end;
+  좌측정렬 :  justify-content: flex-start;
+  한칸 씩 띄워서 배치 :  justify-content:space-between;
+  세로배치 : flex-direction: column;
+  가로배치(기본): flex-direction: row;
+  상하정렬 align-items: center;
+  html에서 박스 크기 설정가능 (비율) :flex-grow: 2;
+  */
+  padding: 10px;
+  background-color:black;
+  align-items: center;
+}
+.flex-item{
+  padding: 5px 20px 5px 5px;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
 }
