@@ -1,0 +1,110 @@
+/* 오른쪽 박스 */
+.sub-box{
+    margin-left: 50px;
+}
+/* 사이드 메뉴 */
+.main_menu{
+    background-color: blueviolet;
+    box-shadow: 5px 5px 5px;
+    width: 100%;
+    max-width: 200px;
+    height: 100vh;
+    z-index: 5;
+    transform: translateX(-150px);
+    transition: all 1s;
+    position: fixed;
+}
+.menu_icon{
+    width:300px; 
+    height:40px;
+    color: white;
+}
+.main_menu:hover{
+    transform: translateX(0px);
+}
+.main_menu i{
+    transform: translateX(170px);
+}
+.main_menu:hover p{
+    transition: all 0.5s;
+    transform: translateX(50px);
+}
+.main_menu:hover i{
+    transition: all 0.5s;
+    transform: translateX(20px);
+}
+
+
+/* 카드아이템  */
+.card-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-fluid{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 카드박스 */
+.card_cal{
+    border-left: 5px solid blue;
+    max-width: 20rem;
+}
+.card_doll{
+    border-left: 5px solid green;
+    max-width: 20rem;
+}
+.card_check{
+    border-left: 5px solid purple;
+    max-width: 20rem;
+}
+.card_chat{
+    border-left: 5px solid goldenrod;
+    max-width: 20rem;
+}
+
+
+
+/* 그래프 박스 */
+.grap-box {
+    width: 100%; 
+    max-width: 1000px;
+    display: inline-block;
+}
+.grap-box div{
+    border: 1px solid #eee;
+    padding: 20px;
+}
+.text-bg-primary{
+    background-color: skyblue;
+    font-weight: bold;
+}
+
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 네비게이션 검색창이벤트 */
+.input-animation{
+    width: 150px;
+    transition: width 1s;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+  }
+.input-animation:focus {
+    width: 300px;
+}
+.input-button {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+
